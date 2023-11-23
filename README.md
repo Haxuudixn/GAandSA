@@ -23,7 +23,7 @@ dataforTSP.xlsx文件中city列代表某个城市，X、Y代表该城市的坐�
 代码执行：
 
 遗传算法解决旅行商问题：GAforTSP.py  
-_Input：count（种群数量）、cross_rate（交叉概率）、mutation_rate（变异概率）、T（迭代次数）、dt(城市坐标数据)
+<em>Input：count（种群数量）、cross_rate（交叉概率）、mutation_rate（变异概率）、T（迭代次数）、dt(城市坐标数据)  
 Output：dt_f（最佳路线）  
  
 pop = begin_population(dt)#种群初始化  
@@ -32,7 +32,7 @@ pop = begin_population(dt)#种群初始化
         pop = cross(pop, cross_rate)#交叉  
         pop = mutation(pop, mutation_rate)#变异  
     end  
-dt_f=max(fit_func(pop))#fit_func函数计算适应度，选择群体中适应度最大的个体输出_  
+dt_f=max(fit_func(pop))#fit_func函数计算适应度，选择群体中适应度最大的个体输出<em>
 
 ### 两种算法解决旅行商问题的优劣势
 ***
