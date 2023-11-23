@@ -12,15 +12,15 @@ matplotlib库用于旅行商问题图像绘制
 ***
 ## 旅行商问题上的应用
 ### 问题概述及代码说明
-问题设置：
+<strong>问题设置：</strong>
 
 假设有一个旅行商人要拜访全国31个省会城市，他需要选择所要走的路径，路径的限制是每个城市只能拜访一次，而且最后要回到原来出发的城市。对路径选择的要求是：所选路径的路程为所有路径之中的最小值。
 
-数据导入：
+<strong>数据导入：</strong>
 
 dataforTSP.xlsx文件中city列代表某个城市，X、Y代表该城市的坐标值。
 
-代码执行：
+<strong>代码执行：</strong>
 
 遗传算法解决旅行商问题：GAforTSP.py  
 <em>Input：count（种群数量）、cross_rate（交叉概率）、mutation_rate（变异概率）、T（迭代次数）、dt(城市坐标数据)  
@@ -32,7 +32,7 @@ pop = begin_population(dt)#种群初始化
         pop = cross(pop, cross_rate)#交叉  
         pop = mutation(pop, mutation_rate)#变异  
     end  
-dt_f=max(fit_func(pop))#fit_func函数计算适应度，选择群体中适应度最大的个体输出<em>
+dt_f=max(fit_func(pop))#fit_func函数计算适应度，选择群体中适应度最大的个体输出</em>
 
 ### 两种算法解决旅行商问题的优劣势
 ***
