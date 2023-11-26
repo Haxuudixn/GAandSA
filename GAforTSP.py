@@ -81,7 +81,7 @@ def mutation(pop, mutation_rate):
 
 
 if __name__ == '__main__':
-    dt = pd.read_excel("data.xlsx", index_col=0)
+    dt = pd.read_excel("dataforTSP.xlsx", index_col=0)
     count = 150  # 种群数量
     cross_rate = 0.3  # 交叉概率
     mutation_rate = 0.008  # 变异概率
