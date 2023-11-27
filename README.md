@@ -1,4 +1,4 @@
-# GAandSA（遗传算法与退火算法实现、实例应用与复杂度分析）
+# GAandSA（遗传算法与退火算法实现）
 ***
 算法实现语言：python  
 引用库：  
@@ -19,21 +19,25 @@ dataforTSP.xlsx文件中city列代表某个城市，X、Y代表该城市的坐�
 <strong>代码执行：</strong>
 
 遗传算法解决旅行商问题：GAforTSP.py  
-<em>Input：count（种群数量）、cross_rate（交叉概率）、mutation_rate（变异概率）、T（迭代次数）、dt(城市坐标数据)  
+Input：count（种群数量）、cross_rate（交叉概率）、mutation_rate（变异概率）、T（迭代次数）、dt(城市坐标数据)  
 Output：dt_f（最佳路线）  
- 
-pop = begin_population(dt)#种群初始化  
-    for i =1 to T do  
-        pop = select(dt, pop)#选择  
-        pop = cross(pop, cross_rate)#交叉  
-        pop = mutation(pop, mutation_rate)#变异  
-    end  
-dt_f=max(fit_func(pop))#fit_func函数计算适应度，选择群体中适应度最大的个体输出</em>
-
 退火算法解决旅行商问题：SAforTSP.py  
 Input:initial_t(初始温度)、lowest_t(最低温度)、M（开始改变温度的次数）、iteration(设置迭代次数)  
 Output:dt_f(最佳路线)  
-![img.png](img.png)
 ***
 ## 函数极值问题上的应用
 ### 问题概述及代码说明
+<strong>问题设置：</strong>
+
+
+求函数y=x^3−60x^2−4x+6在(0，100)的极小值。  
+<strong>代码执行：</strong>
+
+
+遗传算法解决极值问题：GAforex.py  
+Input：count（种群数量）、cross_rate（交叉概率）、mutation_rate（变异概率）、T（迭代次数）、function(函数)  
+Output：x（最小值坐标）  ，function(x)（最小值）
+
+退火算法解决极值问题：SAforex.py
+Input：initial_t（初始温度）、lowest_t （最低温度）、M（改变温度的次数）、iteration（迭代次数）、 function(函数)  
+Output：x（最小值）、  function(x)（最小值）
