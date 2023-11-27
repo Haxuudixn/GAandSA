@@ -35,5 +35,5 @@ if __name__ == '__main__':
 
 dis_min = x
 path_min = function(x)
-print('最短距离：', dis_min)
-print('最短路径：', path_min)
+print('x', dis_min)
+print('最小值', path_min)

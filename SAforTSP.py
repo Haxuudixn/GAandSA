@@ -3,7 +3,7 @@ import numpy as np
 import math
 import pandas as pd
 from scipy.spatial import distance_matrix
-
+import matplotlib.pyplot as plt
 
 def distance(dt, dt_city):  # 计算欧氏距离
     d_matrix = distance_matrix(dt.values, dt.values)
@@ -49,6 +49,10 @@ if __name__ == '__main__':
         t_current = 0.99*t_current
 
 dis_min = dist
-path_min = dt_city
-print('最短距离：', dis_min)
-print('最短路径：', path_min)
+final = dt_city
+dt_f = dt.reindex(final)
+X = dt_f['X'].tolist()
+Y = dt_f['Y'].tolist()
+print(dist)
+plt.plot(X,Y,marker="^")
+plt.show()
